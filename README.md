@@ -12,6 +12,7 @@
 - 🔗 **링크 카드 목록**: SNS 및 블로그 링크를 감각적인 카드 형태로 나열
 - 📊 **클릭 수 집계**: 링크별 실시간 클릭 횟수 카운팅 및 로컬 스토리지 연동
 - 📱 **모바일 최적화**: 모바일 우선(Mobile-first) 반응형 UI/UX
+- 🎨 **따뜻한 톤의 미니멀 UI**: 크림 → 살구 그라데이션 배경 위에 글래스 모피즘 링크 카드
 
 ---
 
@@ -70,4 +71,4 @@ npm run build
 This project is licensed under the MIT License.
 
 ---
-*Last updated: 2026-09-08*
+*Last updated: 2026-09-09*
