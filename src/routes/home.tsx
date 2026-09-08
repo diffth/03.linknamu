@@ -15,12 +15,12 @@ export default function Home() {
   const { counts, increment } = useClickCounts();
 
   return (
-    <main className="flex min-h-screen justify-center p-4 sm:items-center sm:p-8">
-      {/* Phone-shaped card: circular avatar and profile on top, links stacked below. */}
-      <div className="w-full max-w-sm rounded-[2.5rem] border border-stone-200 bg-white px-6 pt-12 pb-16 shadow-sm sm:px-8 sm:pt-14 sm:pb-20">
+    <main className="flex min-h-dvh justify-center px-6 py-16 sm:px-8 sm:py-20">
+      {/* Single centered column on the gradient: profile on top, glass links below. */}
+      <div className="m-auto w-full max-w-sm">
         <ProfileHeader {...profile} />
 
-        <nav className="mt-10 flex flex-col gap-5 sm:gap-6">
+        <nav className="mt-12 flex flex-col gap-4 sm:mt-14 sm:gap-5">
           {links.map((link) => (
             <LinkCard
               key={link.id}
