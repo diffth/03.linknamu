@@ -7,5 +7,19 @@
 
 html,
 body {
-  @apply bg-stone-50 text-stone-900;
+  @apply text-stone-800 antialiased;
+}
+
+/*
+ * Warm cream -> apricot wash. The two radial layers sit on top of the linear one to
+ * give the flat gradient some depth without adding decorative elements to the DOM.
+ * No background-attachment: fixed - it stutters while scrolling on iOS Safari.
+ */
+body {
+  min-height: 100dvh;
+  background-color: #fdf6ec;
+  background-image:
+    radial-gradient(55rem 38rem at 12% -8%, #fffaf0 0%, transparent 60%),
+    radial-gradient(42rem 32rem at 92% 6%, #ffe4c9 0%, transparent 58%),
+    linear-gradient(180deg, #fdf6ec 0%, #fbe9d6 52%, #f6dbc2 100%);
 }
