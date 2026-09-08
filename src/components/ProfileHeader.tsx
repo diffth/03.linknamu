@@ -2,7 +2,7 @@ import type { Profile } from "~/data/profile";
 
 export function ProfileHeader({ name, bio, avatarUrl }: Profile) {
   return (
-    <header className="flex flex-col items-center gap-3">
+    <header className="flex flex-col items-center gap-5 text-center">
       {/* White ring + warm drop shadow lift the avatar off the gradient. */}
       <div className="rounded-full p-1 shadow-[0_16px_34px_-14px_rgba(146,94,55,0.55)] ring-1 ring-white/70">
         {avatarUrl ? (
@@ -21,9 +21,9 @@ export function ProfileHeader({ name, bio, avatarUrl }: Profile) {
         )}
       </div>
 
-      <div className="flex flex-col items-center gap-1">
-        <h1 className="text-xl font-bold sm:text-2xl">{name}</h1>
-        <p className="text-sm text-stone-500">{bio}</p>
+      <div className="flex flex-col items-center gap-2">
+        <h1 className="text-2xl font-bold tracking-tight text-stone-900">{name}</h1>
+        <p className="max-w-[18rem] text-sm leading-relaxed break-keep text-stone-500">{bio}</p>
       </div>
     </header>
   );
